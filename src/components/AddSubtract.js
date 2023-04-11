@@ -23,12 +23,13 @@ export default class AddSubtract extends Component {
   }
 
   handleSubtract() {
-    this.setState(
-      // console.log(this.setState)
-      (prevState) => ({
-        count: prevState.count - 1
-      }),
-    );
+    if (this.state.count !== 0) {
+      this.setState(
+        (prevState) => ({
+          count: prevState.count - 1
+        }),
+      );
+    }
   }
 
   render() {
@@ -36,7 +37,6 @@ export default class AddSubtract extends Component {
       <div className="add-subtract">
         <h1>{this.state.count}</h1>
 
-        <AddSubtract count={this.state.count}/>
         <AddSubtractControls
         handleAdd={this.handleAdd}
         handleSubtract={this.handleSubtract}/>
