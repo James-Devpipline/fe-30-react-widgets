@@ -54,11 +54,14 @@ Create and mount the following React components:
 - The label should update appropriately as you slide
 */
 
-function App() {
+
+import AddSubtract from "./AddSubtract"
+
+
+export default function App() {
   return (
     <div className="App">
+      <AddSubtract />
     </div>
   );
 }
-
-export default App;
