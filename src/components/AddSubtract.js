@@ -35,11 +35,15 @@ export default class AddSubtract extends Component {
   render() {
     return (
       <div className="AddSubtract">
-        <h1>{this.state.count}</h1>
+        <div className="TextWrapper">
+          <h1>{this.state.count}</h1>
+        </div>
 
-        <AddSubtractControls
-        handleAdd={this.handleAdd}
-        handleSubtract={this.handleSubtract}/>
+        <div className="ButtonWrapper">
+          <AddSubtractControls
+          handleAdd={this.handleAdd}
+          handleSubtract={this.handleSubtract}/>
+        </div>
       </div>
     )
   }

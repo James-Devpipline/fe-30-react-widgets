@@ -5,11 +5,11 @@ export default function TextAligner() {
 
   return (
     <div className="TextAligner">
-      <div className="Text" style={{"justifyContent": alignment}}>
+      <div className="TextWrapper" style={{"justifyContent": alignment}}>
         <h1>Push me around with them buttons</h1>
       </div>
 
-      <div className="TextAlignButtons">
+      <div className="ButtonWrapper">
         <button onClick={() => setAlignment((prevAlignment) => (prevAlignment = "flex-start"))}>Left</button>
 
         <button onClick={() => setAlignment((prevAlignment) => (prevAlignment = "center"))}>Center</button>

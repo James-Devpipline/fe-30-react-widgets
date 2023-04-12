@@ -5,10 +5,13 @@ export default function GreetingToggle() {
 
   return (
     <div className='GreetingToggle'>
-      <h1>{toggle ? "Hello there" : "General Kenobi"}</h1>
+      <div className="TextWrapper">
+        <h1>{toggle ? "Hello there" : "General Kenobi"}</h1>
+      </div>
 
-      <button onClick={() => setToggle((prevToggle) => !prevToggle)}>Toggle Me</button>
-
+      <div className="ButtonWrapper">
+        <button onClick={() => setToggle((prevToggle) => !prevToggle)}>Toggle Me</button>
+      </div>
     </div>
   )
 

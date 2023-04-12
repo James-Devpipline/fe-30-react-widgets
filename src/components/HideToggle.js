@@ -5,10 +5,13 @@ export default function HideToggle() {
 
   return (
     <div className='HideToggle'>
-      <h1>{toggle ? "Hide Me" : ""}</h1>
+      <div className="TextWrapper">
+        <h1>{toggle ? "Hide Me" : ""}</h1>
+      </div>
 
-      <button onClick={() => setToggle((prevToggle) => !prevToggle)}>{toggle ? "Hide" : "Show"}</button>
-
+      <div className="ButtonWrapper">
+        <button onClick={() => setToggle((prevToggle) => !prevToggle)}>{toggle ? "Hide" : "Show"}</button>
+      </div>
     </div>
   )
 
