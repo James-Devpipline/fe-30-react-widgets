@@ -1,18 +1,15 @@
-import { Component } from "react";
+import { Component, useEffect, useState } from "react";
 
-export default class GreetingToggle extends Component {
-  constructor() {
-    super();
+export default function GreetingToggle() {
+  const [toggle, setToggle] = useState(true)
 
-    this.state = {
-      toggledText: 'Hello'
-      
-    }
-  }
+  return (
+    <div className='GreetingToggle'>
+      <h1>{toggle ? "Hello there" : "General Kenobi"}</h1>
 
-  handleToggleClick() {
-    this.setState((prevState) => ({
-      toggledText: ''
-    })),
-  }
+      <button onClick={() => setToggle((prevToggle) => !prevToggle)}>Toggle Me</button>
+
+    </div>
+  )
+
 }

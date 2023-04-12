@@ -56,12 +56,14 @@ Create and mount the following React components:
 
 
 import AddSubtract from "./AddSubtract"
+import GreetingToggle from "./GreetingToggle"
 
 
 export default function App() {
   return (
     <div className="App">
       <AddSubtract />
+      <GreetingToggle />
       
     </div>
   );
