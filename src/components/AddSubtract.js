@@ -34,7 +34,7 @@ export default class AddSubtract extends Component {
 
   render() {
     return (
-      <div className="add-subtract">
+      <div className="AddSubtract">
         <h1>{this.state.count}</h1>
 
         <AddSubtractControls

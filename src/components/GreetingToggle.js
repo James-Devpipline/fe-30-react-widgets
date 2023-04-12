@@ -1,4 +1,4 @@
-import { Component, useEffect, useState } from "react";
+import { Component, useState } from "react";
 
 export default function GreetingToggle() {
   const [toggle, setToggle] = useState(true)

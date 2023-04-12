@@ -57,6 +57,7 @@ Create and mount the following React components:
 
 import AddSubtract from "./AddSubtract"
 import GreetingToggle from "./GreetingToggle"
+import HideToggle from "./HideToggle"
 
 
 export default function App() {
@@ -64,6 +65,7 @@ export default function App() {
     <div className="App">
       <AddSubtract />
       <GreetingToggle />
+      <HideToggle />
       
     </div>
   );
