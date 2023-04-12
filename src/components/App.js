@@ -59,6 +59,7 @@ import "../style/main.scss"
 import AddSubtract from "./AddSubtract"
 import GreetingToggle from "./GreetingToggle"
 import HideToggle from "./HideToggle"
+import FontSizer from "./FontSizer"
 import TextAligner from "./TextAligner";
 
 export default function App() {
@@ -67,6 +68,7 @@ export default function App() {
       <AddSubtract />
       <GreetingToggle />
       <HideToggle />
+      <FontSizer />
       <TextAligner />
       
     </div>
