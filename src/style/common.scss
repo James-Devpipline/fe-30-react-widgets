@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  width: 100%;
+}
+
+#root {
+  color: red($color: red);
+  display: flex;
+  width: 100%;
+  .App {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    // align-items: center;
+
+    .TextAligner{
+      .Text{
+        display: flex;
+        width: 100%;
+      }
+    }
+
+  }
+}

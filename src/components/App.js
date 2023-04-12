@@ -55,10 +55,11 @@ Create and mount the following React components:
 */
 
 
+import "../style/main.scss"
 import AddSubtract from "./AddSubtract"
 import GreetingToggle from "./GreetingToggle"
 import HideToggle from "./HideToggle"
-
+import TextAligner from "./TextAligner";
 
 export default function App() {
   return (
@@ -66,6 +67,7 @@ export default function App() {
       <AddSubtract />
       <GreetingToggle />
       <HideToggle />
+      <TextAligner />
       
     </div>
   );
