@@ -1,6 +1,6 @@
 import { Component } from "react"
 
-import AddSubtractControls from "./AddSubtractControls";
+import AddSubtractControls from "../AddSubtractControls";
 
 export default class AddSubtract extends Component {
   constructor() {

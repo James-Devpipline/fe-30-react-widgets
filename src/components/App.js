@@ -54,23 +54,36 @@ Create and mount the following React components:
 - The label should update appropriately as you slide
 */
 
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "../style/main.scss"
-import AddSubtract from "./AddSubtract"
-import GreetingToggle from "./GreetingToggle"
-import HideToggle from "./HideToggle"
-import FontSizer from "./FontSizer"
-import TextAligner from "./TextAligner";
+import AddSubtract from "./pages/AddSubtract"
+import GreetingToggle from "./pages/GreetingToggle"
+import ShowHideToggle from "./pages/ShowHideToggle"
+import FontSizer from "./pages/FontSizer"
+import TextAligner from "./pages/TextAligner";
+import LifecycleClock from "./pages/LifecycleClock"
+import ColorChanger from "./pages/ColorChanger"
+import RGBSliders from "./pages/RGBSliders"
+import Navbar from "./navigation/Navbar"
 
 export default function App() {
   return (
     <div className="App">
-      <AddSubtract />
-      <GreetingToggle />
-      <HideToggle />
-      <FontSizer />
-      <TextAligner />
-      
+      <Router>
+        <Navbar />
+
+        <Switch>
+          <Route exact path="/" component={AddSubtract} />
+          <Route exact path="/greetingtoggle" component={GreetingToggle} />
+          <Route path="/showhidetoggle" component={ShowHideToggle} />
+          <Route path="/fontsizer" component={FontSizer} />
+          <Route path="/textaligner" component={TextAligner} />
+          <Route path="/lifecycleclock" component={LifecycleClock} />
+          <Route path="/colorchanger" component={ColorChanger} />
+          <Route path="/rgbsliders" component={RGBSliders} />
+        </Switch>
+      </Router>
     </div>
   );
 }
