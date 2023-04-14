@@ -1,10 +1,24 @@
-export default function ColorChanger() {
-  return (
+import { useState } from "react"
 
+export default function ColorChanger() {
+  const [textColor, setTextColor] = useState("red")
+  const appendColor = (i) => {
+    setTextColor((prevTextColor) => (prevTextColor = i))
+  }
+  
+  return (
     <div className="ColorChanger">
       <div className="TextWrapper">
-        <h1>Hello from Color Changer</h1>
+        <p style={{"color" : textColor}}>{textColor}</p>
       </div>
-    </div>
+
+      <div className="ButtonWrapper">
+        <input onChange={(event) => setTextColor(event.target.value)}
+        value = {textColor}/>
+
+        <button onClick={appendColor} >Do it</button>
+
+      </div>
+  </div>
   )
 }
